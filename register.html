@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>WhatsUp - Register</title>
+	<link href="css/layout.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<!-- navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="new.html">Create Event</a></li>
+				<li><a class="current" href="register.html">Register</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Register</h1>
+		<form>
+
+			<fieldset>
+				<legend>Login information</legend>
+				<!-- username input -->
+				<p><label for="username">Username<span class="alert">*</span></label><br>
+					<input type="text" id="username" placeholder="your username" /></p>
+				<!-- password input -->
+				<p><label for="password">Password<span class="alert">*</span></label><br>
+					<input type="password" id="password" placeholder="your password" /></p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Contact information</legend>
+				<!-- firstname input -->
+				<p><label for="firstname">First name<span class="alert">*</span></label><br>
+					<input type="text" id="firstname" placeholder="your first name" /></p>
+				<!-- lastname input -->
+				<p><label for="lastname">Last name<span class="alert">*</span></label><br>
+					<input type="text" id="lastname" placeholder="your last name" /></p>
+				<!-- email input -->
+				<p><label for="email">Email<span class="alert">*</span></label><br>
+					<input type="email" id="email" placeholder="your email address" /></p>
+				<!-- telephone input -->
+				<p><label for="tel">Telephone number<span class="alert">*</span></label><br>
+					<input type="tel" id="tel" placeholder="your telephone number" /></p>
+			</fieldset>
+
+			<p class="alert"><img src="images/alert.svg" alt="Alert Icon"> Items with an * are required!</p>
+			<input type="submit" value="Register!">
+
+		</form>
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<address>
+			<p><a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon">Facebook</a></p>
+			<p><a href="http://www.twitter.com"><img src="images/twitter.svg" alt="Twitter Icon">Twitter</a></p>
+			<p><a href="http://www.plus.google.com"><img src="images/google+.svg" alt="Google+ Icon">Google+</a></p>
+			<p><a href="mailto:mail@example.com">Email</a></p>
+			<p>+45 00 11 22 33</p>
+		</address>
+		<p class="footnote">Made by Thomas Goris</p>
+	</footer>
+</body>
+
+</html>

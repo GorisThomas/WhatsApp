@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>WhatsUp - New Event</title>
+	<link href="css/layout.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<!-- navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a class="current" href="new.html">Create Event</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Create a new event!</h1>
+		<form>
+			<!-- event name input -->
+			<p><label for="name">Event name<span class="alert">*</span></label><br>
+				<input type="text" id="name" placeholder="The event name" required></p>
+			<!-- event location input -->
+			<p><label for="location">Location<span class="alert">*</span></label><br>
+				<input type="text" id="location" placeholder="The location" required></p>
+				
+			<div class="formbox">
+				<!-- event startdate input -->
+				<p><label for="startdate">Start date<span class="alert">*</span></label><br>
+					<input type="date" id="startdate" required></p>
+				<!-- event enddate input -->
+				<p><label for="enddate">End date</label><br>
+					<input type="date" id="enddate"></p>
+				<!-- event starthour input -->
+				<p><label for="starttime">Starting time<span class="alert">*</span></label><br>
+					<input type="time" id="starttime" required></p>
+			</div>
+
+			<p class="alert"><img src="images/alert.svg" alt="Alert icon"> Items with an * are required!</p>
+			<input type="submit" value="Add event">
+		</form>
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<address>
+			<p><a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon">Facebook</a></p>
+			<p><a href="http://www.twitter.com"><img src="images/twitter.svg" alt="Twitter Icon">Twitter</a></p>
+			<p><a href="http://www.plus.google.com"><img src="images/google+.svg" alt="Google+ Icon">Google+</a></p>
+			<p><a href="mailto:mail@example.com">Email</a></p>
+			<p>+45 00 11 22 33</p>
+		</address>
+		<p class="footnote">Made by Thomas Goris</p>
+	</footer>
+</body>
+
+</html>

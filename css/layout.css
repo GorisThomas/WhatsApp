@@ -1,0 +1,229 @@
+/* Css index (use 'ctrl + f' for quick search)
+
+line 10: General
+line 46: Footer
+line 78: Forms
+line 132: Navigation
+line 163: Table
+line 176: Responsive Design
+
+/* ------------------------ General ------------------------------- */
+html {
+  background-color: #dee1e5;
+  font-family: Helvetica;
+}
+
+body {
+  margin: 0px;
+  display: flex; /* flexbox to put footer at the bottom */
+  min-height: 100vh; /*flexbox goes at least to the bottom of the view */
+  flex-direction: column; /* vertical flexbox */
+}
+
+main {
+  width: 50%; /* makes the content take half of the page */
+  margin: auto; /* centers the main tag */
+  flex: 1; /* keeps content to the top */
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0px 4px 5px 4px;
+  position: fixed;
+  left: 5%;
+}
+
+article h1 {
+  font-size: 2em;
+}
+
+img {
+  float:left;
+  padding-right: 3px;
+}
+
+/* ------------------------ Footer -------------------------------- */
+
+footer {
+  margin-top: 15px;
+  background-color: #569bc9;
+  text-align: center;
+}
+
+.footnote {
+  font-size: 80%;
+  margin: 2px 0px;
+}
+
+address {
+  display: flex; /* alligns the child elements horizontally */
+  width: 50%; /* makes the content take half of the parent */
+  margin: auto; /* centers the address tag*/
+  text-align: left;
+}
+
+address p {
+  margin: auto;
+  margin-top: 5px;
+}
+
+address p a {
+  color: black;
+}
+address p a:hover {
+  color: white;
+}
+
+/* ------------------------- Forms -------------------------------- */
+
+.alert {
+  color: red;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.formbox {
+  display: flex;
+}
+
+.formbox p {
+  width: 100%;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 10px; /* rounds the borders */
+  padding: 10px;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+p img {
+  width: 18.4px;
+  height: 18.4px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 90%;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #569bc9;
+  color: white;
+  border-style: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069af;
+  text-decoration: underline;
+}
+
+textarea {
+  width: 95%;
+  height: 65px;
+}
+
+/* ----------------------- Navigation ----------------------------- */
+
+ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  background-color: #569bc9;
+}
+
+li {
+  list-style: none;
+  width: 20%;
+  text-align: center;
+}
+
+li a {
+  display: block; /* fill the entire li parent, entire block clickable */
+  color: black;
+  text-decoration: none; /* removes the underline from a elements */
+  padding: 15px 0px;
+  font-size: 125%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+li a:hover, .current { /*changes when the mouse hovers over the element */
+  background-color: #0069af;
+  color: white;
+  text-decoration: underline;
+}
+
+/* ---------------------------- Table --------------------------------*/
+
+td, th, table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+tr:first-child {
+  background-color: #569bc9;
+}
+
+/* ---------------------- Responsive Design ------------------------- */
+@media screen and (max-width: 1000px) {
+  main {
+    width: 90%;
+  }
+
+  aside{
+    position: relative;
+    width: 100%;
+    margin: 0px;;
+    margin-bottom: 5px;
+    left: 0;
+  }
+
+  address {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  address {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    float: none;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+
+  li a {
+    padding: 5px;
+  }
+
+  .formbox {
+    flex-direction: column;
+  }
+
+  .formbox p {
+    margin-top: 0px; /* margin collapsing was not happening on these paragraphs*/
+  }
+
+  td:nth-child(3), td:nth-child(4), td:nth-child(5), th:nth-child(3), th:nth-child(4), th:nth-child(5){
+    display: none;
+  }
+}

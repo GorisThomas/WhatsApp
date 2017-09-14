@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>WhatsUp - Events</title>
+	<link href="css/layout.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<!-- navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="current" href="events.html">Events</a></li>
+				<li><a href="new.html">Create Event</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Events overview</h1>
+
+		<aside>
+			<h2>Search event</h2>
+			<p><label for="search">Search on:</label>
+				<select>
+					<option value="name">Name</option>
+					<option value="startdate">Start date</option>
+					<option value="enddate">End date</option>
+					<option value="starttime">Starting time</option>
+					<option value="location">Location</option>
+				</select></p>
+			<p><label for="query">Search input</label><br><input type="text" id="query"></p>
+			<input type="submit" value="Search!">
+		</aside>
+
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Start date</th>
+				<th>End date</th>
+				<th>Starting time</th>
+				<th>Location</th>
+				<th>More info</th>
+			</tr>
+			<tr>
+				<td>Study Party</td>
+				<td>20/09/2017</td>
+				<td>20/09/2017</td>
+				<td>18:00</td>
+				<td>Sofiendalsvej 60</td>
+				<td><a href="http://facebook.com">facebook event</a></td>
+			</tr>
+			<tr>
+				<td>Board game party!</td>
+				<td>15/10/2017</td>
+				<td>15/10/2017</td>
+				<td>17:00</td>
+				<td>Dice 'n drinks Aalborg</td>
+				<td><a href="http://dicendrinks.com/">http://dicendrinks.com/</a></td>
+			</tr>
+		</table>
+
+	</main>
+
+	<!-- footer -->
+	<footer>
+		<address>
+			<p><a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon">Facebook</a></p>
+			<p><a href="http://www.twitter.com"><img src="images/twitter.svg" alt="Twitter Icon">Twitter</a></p>
+			<p><a href="http://www.plus.google.com"><img src="images/google+.svg" alt="Google+ Icon">Google+</a></p>
+			<p><a href="mailto:mail@example.com">Email</a></p>
+			<p>+45 00 11 22 33</p>
+		</address>
+		<p class="footnote">Made by Thomas Goris</p>
+	</footer>
+</body>
+
+</html>
